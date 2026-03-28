@@ -5,7 +5,7 @@ const server = http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'application/json' });
     res.end(JSON.stringify({
       response: {
-        externalNumber: "+1YOUR_VAPI_NUMBER"
+        externalNumber: "+18564228130"
       },
       success: true,
       status: "success"
