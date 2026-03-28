@@ -5,7 +5,7 @@ const server = http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'application/json' });
     res.end(JSON.stringify({
       response: {
-        externalNumber: "+18564228130"
+        externalNumber: "+1YOUR_VAPI_NUMBER"
       },
       success: true,
       status: "success"
@@ -13,4 +13,7 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(process.env.PORT || 3000);
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running on port ${PORT}`);
+});
