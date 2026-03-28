@@ -14,5 +14,3 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(process.env.PORT || 3000);
-
-https://vapi-router.onrender.com/route
