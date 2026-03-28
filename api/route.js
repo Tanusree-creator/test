@@ -1,4 +1,4 @@
-export default function handler(req, res) {
+module.exports = function handler(req, res) {
   res.status(200).json({
     response: {
       externalNumber: "+18564228130"
@@ -8,14 +8,7 @@ export default function handler(req, res) {
   });
 }
 ```
-Click **Commit changes**
 
-### Step 3 — Go to Vercel
-- **Delete the existing project** in Vercel
-- Click **"New Project"** → import your GitHub repo again
-- Click **Deploy**
-
-### Step 4 — Test
-Visit:
+Commit changes → Vercel will auto-redeploy → then visit:
 ```
-https://your-new-url.vercel.app/api/route
+https://test-tan.vercel.app/api/route
