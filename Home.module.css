@@ -1,0 +1,83 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #1a1a2e;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.main {
+  flex: 1;
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #1a1a2e;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.feature {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-top: 4px solid #1a1a2e;
+}
+
+.feature h3 {
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+.feature p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.footer {
+  background: #1a1a2e;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
